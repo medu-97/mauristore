@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Sans+Arabic:wght@400;700&display=swap');
+
+:root {
+  --sand: #f5e6c8;
+  --brown: #3d2008;
+  --gold: #c8972a;
+  --beige: #fdf6e8;
+  --deep-dark: #1a1108;
+}
+
+body {
+  background-color: var(--sand);
+  color: var(--brown);
+  font-family: 'Noto Sans Arabic', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar for that 'Tight' feel */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--sand); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+}
