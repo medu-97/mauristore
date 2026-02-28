@@ -5,18 +5,12 @@
   --brown: #3d2008;
   --gold: #c8972a;
   --beige: #fdf6e8;
-  --deep-dark: #1a1108;
 }
 
 body {
   background-color: var(--sand);
   color: var(--brown);
   font-family: 'Noto Sans Arabic', sans-serif;
-  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
-
-/* Custom Scrollbar for that 'Tight' feel */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--sand); }
-::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
-
