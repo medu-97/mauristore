@@ -2,9 +2,14 @@ import { db } from "@/app/firebase";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { ShoppingCart, Store } from "lucide-react";
 
-export default async function StorePage({ params }: { params: { store: string } }) {
-  const storeId = params.store;
+// 1. Update the type to Promise<{ store: string }>
+export default async function StorePage({ params }: { params: Promise<{ store: string }> }) {
+  
+  // 2. Await the params before using them
+  const resolvedParams = await params;
+  const storeId = resolvedParams.store;
 
+  // Fetch Store Data from Firebase Firestore
   const q = query(collection(db, "stores"), where("slug", "==", storeId));
   const querySnapshot = await getDocs(q);
   const storeData = querySnapshot.docs[0]?.data();
