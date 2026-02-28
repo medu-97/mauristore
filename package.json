@@ -8,12 +8,12 @@
     "start": "next start",
     "lint": "next lint"
   },
- "dependencies": {
-  "next": "latest",
-  "react": "^19.0.0",
-  "react-dom": "^19.0.0",
-  "@supabase/supabase-js": "^2.39.0"
-},
+  "dependencies": {
+    "firebase": "^12.10.0",
+    "next": "latest",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
