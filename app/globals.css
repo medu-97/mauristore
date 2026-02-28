@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Noto+Sans+Arabic:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --sand: #f5e6c8;
@@ -10,7 +12,25 @@
 body {
   background-color: var(--sand);
   color: var(--brown);
-  font-family: 'Noto Sans Arabic', sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* Creative Gold Purchase Button */
+.gold-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, #a67c22 100%);
+  color: #1a1108;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 15px rgba(200, 151, 42, 0.4);
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.gold-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(200, 151, 42, 0.6);
 }
